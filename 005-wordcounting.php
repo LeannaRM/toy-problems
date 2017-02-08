@@ -1,17 +1,19 @@
 <?php
  function wordcounting($wordstring)
 {
-	$words = explode(" ", $wordstring);
+	$trimmed = str_replace(",","",$wordstring);
+	$caseCheckedAndTrimmed = strtolower($trimmed)
+	$words = explode(" ", $trimmed);
 	
-	//echo $words[0];
-	//echo sizeof($words);
+	// //echo $words[0];
+	// //echo sizeof($words);
 
-	for ($i = 1; $i <= sizeof($words); $i++) {
-	 	echo $i;
-	 	echo $words[$i];
-	}
+	// for ($i = 1; $i <= sizeof($words); $i++) {
+	//  	echo $i;
+	//  	echo $words[$i];
+	// }
 
-	return $words;
+	// return $words;
 }
 
 
