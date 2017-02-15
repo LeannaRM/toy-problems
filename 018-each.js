@@ -1,5 +1,5 @@
 function each(array,functionname) {
-	for (i=0;i<array.length;i++) {
+	for (var i=0;i<array.length;i++) {
 		functionname(array[i]);
 	}
 }
